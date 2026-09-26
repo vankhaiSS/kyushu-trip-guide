@@ -47,6 +47,15 @@
     .trip-story{margin:14px 0 20px;padding:17px 18px;border-radius:23px;background:rgba(255,255,255,.86);border:1px solid rgba(255,255,255,.98);box-shadow:var(--shadow)}.trip-story h2{margin:0 0 6px;color:#173d60;font-size:17px}.trip-story p{margin:0;color:#3d566b;font-size:14px;line-height:1.75}
     .why{margin:14px 0 12px;padding:15px 16px;border-radius:18px;background:linear-gradient(145deg,#f6fafc,#eef6fb);border:1px solid #dfebf3}.why h3{margin:0 0 7px;color:#17486e;font-size:15px;letter-spacing:-.02em}.why p{margin:0 0 8px;font-size:14px;line-height:1.75;color:#2f465a}.why p:last-child{margin-bottom:0}.why .look{color:#173d60}.food-note{padding:11px 13px;border-radius:14px;background:#fffaf0;border:1px solid #f0e2c9;font-size:13px;line-height:1.7;color:#5d4a32;margin:11px 0}.food-note strong{color:#775324}.source-links{margin:10px 0 0;font-size:12px;color:#6a7d8e;line-height:1.7}.source-links a{color:#336f9c}.why a{font-weight:600}
     @media(max-width:380px){.trip-story,.why{padding:14px}.why p,.trip-story p{font-size:13px}}
+    .detail-guide{margin:3px 0 13px;padding:10px 12px;border-radius:13px;background:#edf7ff;color:#315b78;font-size:12px;line-height:1.6}
+    .row>.step-detail{grid-column:2;margin:-8px 0 3px 15px;padding:0 0 10px;border-top:0;border-bottom:1px solid #e2ecf3;min-width:0}
+    .row>.step-detail summary{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border:1px solid #d4e5f2;border-radius:999px;background:#f3f9fe;color:#285f87;font-size:12px;font-weight:700;list-style:none;min-height:32px}
+    .row>.step-detail summary::-webkit-details-marker{display:none}
+    .row>.step-detail summary::before{content:'＋';font-size:15px;line-height:1}
+    .row>.step-detail[open] summary::before{content:'−'}
+    .step-detail-body{margin:8px 0 0;padding:10px 12px;border-radius:12px;background:#f7fbfe;border:1px solid #e1edf5;color:#32495c;font-size:13px;line-height:1.65}
+    .step-detail-body ul{margin:0;padding-left:18px}.step-detail-body li+li{margin-top:6px}.step-detail-body a{font-weight:700}
+    .row:has(>.step-detail) > p{padding-bottom:10px}
 
     /* Optical layer adapted for this single-file guide from dpawlikowski/liquid-glass (MIT).
        The displaced layer bends our fixed gradient scene; live text never receives the SVG filter. */
@@ -127,7 +136,7 @@
       <section class="day" id="d927"><div class="day-head"><h2>9月27日 · 福冈落地与鹿儿岛</h2><p>福冈机场／博多 → JR Pass窗口 → 九州新干线 → 鹿儿岛</p></div><div class="day-body">
         <p class="must">今日重点：把换票、指定席、特大行李和晚间新干线一次处理干净。</p>
         <div class="day-glance"><div class="glance"><i>🎫</i><b>核心任务</b><small>换 JR Pass</small></div><div class="glance"><i>🧳</i><b>特大行李</b><small>164.5 cm</small></div><div class="glance"><i>🚄</i><b>晚间移动</b><small>博多 → 鹿儿岛</small></div></div>
-        <div class="timeline"><div class="row"><div class="time">抵达后</div><p>福冈机场 → 博多站；预留拖箱移动时间。</p></div><div class="row"><div class="time">博多站</div><p>换 JR Pass；确认 9/28 Mizuho 612、9/29 阿苏男孩优先、9/29 九州横断特急5号、9/30 由布院之森4号。</p></div><div class="row"><div class="time">行李</div><p class="hard">79 + 55 + 30.5 = 164.5 cm，按特大行李处理；让窗口确认座位／行李规则。</p></div><div class="row"><div class="time">18:24</div><p><b>Mizuho 609</b>：博多 → 鹿儿岛中央 19:50 <span class="tag">早到</span></p></div><div class="row"><div class="time">19:24</div><p><b>Mizuho 611</b>：博多 → 鹿儿岛中央 20:51 <span class="tag">正常</span></p></div></div>
+        <div class="timeline"><div class="row"><div class="time">16:30后</div><p>福冈机场国际线入境、取箱 → 直达巴士到博多站筑紫口。</p></div><div class="row"><div class="time">博多站</div><p>三人会合；换 JR Pass，一次办好后续指定席与由布院之森实体券。</p></div><div class="row"><div class="time">行李</div><p class="hard">79 + 55 + 30.5 = 164.5 cm，按特大行李处理；确认新干线专用座位。</p></div><div class="row"><div class="time">18:24</div><p><b>Mizuho 609</b>：博多 → 鹿儿岛中央 19:50 <span class="tag">手续早完成才坐</span></p></div><div class="row"><div class="time">19:24</div><p><b>Mizuho 611</b>：博多 → 鹿儿岛中央 20:51 <span class="tag">正常主方案</span></p></div><div class="row"><div class="time">到站后</div><p>鹿儿岛中央 → 喜来登；酒店接驳碰得上就坐，否则市电换乘。</p></div></div>
         <section class="why"><h3>为什么第一晚直奔鹿儿岛</h3><p>把入境、三人汇合和 JR Pass 手续集中在博多处理，后面几天就能直接按票面上车。18:24 是入境顺利时的奖励班次；19:24 留给正常出关和完整核票，抵达后只需去喜来登放行李、吃饭休息。</p><p class="look"><strong>现场看点：</strong>在博多窗口把两人的 Pass、第三人的车票、9/30 已订观光列车实体券与 164.5 cm 箱子的座位安排一起核对。鹿儿岛中央到喜来登，酒店接驳恰好顺路就乘；否则按市电方案走。</p></section>
         <div class="food-note"><strong>吃饭建议｜</strong>换票后若有余裕就在博多站吃；时间紧则买便当或饭团上车。第一晚不为餐厅改变车次。</div>
         <div class="map-card" data-map-card><iframe loading="lazy" title="9月27日地图" src="https://www.google.com/maps?q=Hakata+Station&amp;output=embed"></iframe><div class="map-tools"><strong>📍 地图内嵌 · 点击地点切换</strong><div class="map-tabs"><button class="map-chip" type="button" aria-pressed="true" data-query="Hakata Station">博多站</button><button class="map-chip" type="button" aria-pressed="false" data-query="Kagoshima-Chuo Station">鹿儿岛中央站</button></div><a class="map-open" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Hakata+Station">在 Google Maps 中打开 ↗</a></div></div>
@@ -138,7 +147,7 @@
       <section class="day" id="d928"><div class="day-head"><h2>9月28日 · 樱岛与熊本夜景</h2><p>鹿儿岛市区 → 樱岛 → 鹿儿岛中央 → 熊本市役所展望厅</p></div><div class="day-body">
         <p class="must">今日重点：樱岛按渡轮＋Island View；晚间按票面乘 Mizuho 612，在熊本下车。</p>
         <div class="day-glance"><div class="glance"><i>⛴️</i><b>上午</b><small>樱岛渡轮</small></div><div class="glance"><i>🌋</i><b>白天</b><small>Island View</small></div><div class="glance"><i>🌃</i><b>晚上</b><small>熊本城夜景</small></div></div>
-        <div class="timeline"><div class="row"><div class="time">上午</div><p>鹿儿岛市区 → 樱岛渡轮；目标 09:00 左右渡轮。</p></div><div class="row"><div class="time">09:30起</div><p>Island View；按体力选择停留点。CUTE 一日券覆盖相关交通，¥1,400／人。</p></div><div class="row"><div class="time">18:22</div><p><b>Mizuho 612</b>：鹿儿岛中央 → 熊本 19:12 → 博多 19:46；两人在熊本下车，第三人继续到博多。</p></div><div class="row"><div class="time">约20:00</div><p>熊本市役所14楼展望厅；18点后走1楼南侧入口，平日到22:00。</p></div></div>
+        <div class="timeline"><div class="row"><div class="time">07:30</div><p>酒店早餐、退房，把大行李寄存在喜来登。</p></div><div class="row"><div class="time">09:00</div><p>鹿儿岛港 → 樱岛港渡轮，接 09:30 Island View。</p></div><div class="row"><div class="time">09:30–10:55</div><p>Island View；汤之平展望所停约30分钟，再回樱岛港。</p></div><div class="row"><div class="time">11:00–12:25</div><p>游客中心、海滨足汤、岛上午餐；12:25 左右乘渡轮返市区。</p></div><div class="row"><div class="time">12:45–14:15</div><p>时间顺利可去鹿儿岛水族馆；天气好、时间够再考虑城山。</p></div><div class="row"><div class="time">16:20后</div><p>回喜来登取行李，约 17:15 前到鹿儿岛中央站。</p></div><div class="row"><div class="time hard">18:22</div><p class="hard"><b>Mizuho 612</b>：鹿儿岛中央 → 熊本 19:12 → 博多 19:46；两人在熊本下车，第三人继续到博多。</p></div><div class="row"><div class="time">晚间</div><p>熊本站放箱 → 市电去熊本市役所14楼看城景 → 市中心晚餐与商店街。</p></div></div>
         <section class="why"><h3>樱岛看什么，熊本为什么留到晚上</h3><p>樱岛是鹿儿岛最有辨识度的火山景观。渡轮上先看海湾与火山同框；上岛后用环岛观光巴士串起火山游客中心、熔岩地貌与展望点，按天气和体力选择下车处，不必每站都打卡。</p><p class="look"><strong>晚上这样接：</strong>19:12 到熊本后先放行李，再到市役所14楼从高处看熊本城夜景。这样第二天早上可以直接去阿苏，不用为城堡往返压缩山上的时间。</p><p class="source-links">延伸了解：<a href="https://www.kagoshima-kankou.com/guide/51674" target="_blank" rel="noopener">樱岛 Island View 官方介绍 ↗</a></p></section>
         <div class="food-note"><strong>餐饮可选｜</strong>鹿儿岛午餐可用渡轮乌冬快速解决；想坐下来吃，再考虑前面聊过的珍满家庭餐厅。熊本晚餐留在看夜景后选，市中心下通／新市街有更多临场选择，不必为了预约限制阿苏前一晚的节奏。</div>
         <div class="map-card" data-map-card><iframe loading="lazy" title="9月28日地图" src="https://www.google.com/maps?q=Sakurajima+Ferry+Terminal+Kagoshima&amp;output=embed"></iframe><div class="map-tools"><strong>📍 地图内嵌 · 点击地点切换</strong><div class="map-tabs"><button class="map-chip" type="button" aria-pressed="true" data-query="Sakurajima Ferry Terminal Kagoshima">樱岛渡轮</button><button class="map-chip" type="button" aria-pressed="false" data-query="Kagoshima-Chuo Station">鹿儿岛中央站</button><button class="map-chip" type="button" aria-pressed="false" data-query="Kumamoto Station">熊本站</button><button class="map-chip" type="button" aria-pressed="false" data-query="Kumamoto City Hall">熊本市役所</button></div><a class="map-open" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sakurajima+Ferry+Terminal+Kagoshima">在 Google Maps 中打开 ↗</a></div></div>
@@ -149,7 +158,7 @@
       <section class="day" id="d929"><div class="day-head"><h2>9月29日 · 阿苏与别府</h2><p>熊本 → 阿苏 → 草千里／阿苏山上可选 → 别府</p></div><div class="day-body">
         <p class="must">最高优先级：阿苏男孩优先；真正必须守住的是 <span class="hard">11:50、15:45、16:48</span>。</p>
         <div class="day-glance"><div class="glance"><i>🚂</i><b>优先列车</b><small>阿苏男孩</small></div><div class="glance"><i>🚌</i><b>硬节点</b><small>11:50 / 15:45</small></div><div class="glance"><i>⛰️</i><b>核心景点</b><small>草千里</small></div></div>
-        <div class="timeline"><div class="row"><div class="time">09:57</div><p><b>阿苏男孩！1号</b>：熊本 → <b>11:22到阿苏</b>（11:27再发往宫地）；全车指定席。</p></div><div class="row"><div class="time">11:22–11:45</div><p>下车、寄存／整理行李、找公交站。</p></div><div class="row"><div class="time hard">11:50</div><p class="hard">阿苏站 → 草千里，12:16到。必须赶上的上山方向公交。</p></div><div class="row"><div class="time">12:16–13:00</div><p>午饭＋草千里；先吃饭，再决定是否上山。</p></div><div class="row"><div class="time">13:11</div><p>草千里 → 阿苏山上 Terminal，13:20到。<span class="tag">可选</span></p></div><div class="row"><div class="time hard">15:45</div><p class="hard">草千里 → 阿苏站，16:13到。全日最高级别硬节点。</p></div><div class="row"><div class="time hard">16:48</div><p class="hard">九州横断特急5号：阿苏 → 别府，18:45到。</p></div></div>
+        <div class="timeline"><div class="row"><div class="time">09:57</div><p><b>阿苏男孩！1号</b>：熊本 → <b>11:22到阿苏</b>（11:27再发往宫地）；全车指定席。</p></div><div class="row"><div class="time">11:22–11:45</div><p>下车、寄存／整理行李、找公交站。</p></div><div class="row"><div class="time hard">11:50</div><p class="hard">阿苏站 → 草千里，12:16到。上山方向关键公交。</p></div><div class="row"><div class="time">12:16–13:00</div><p>午饭＋草千里；先吃饭，再决定是否上山。</p></div><div class="row"><div class="time">13:11</div><p>草千里 → 阿苏山上 Terminal，13:20到。<span class="tag">可选</span></p></div><div class="row"><div class="time hard">15:20</div><p class="hard">结束游览、到草千里公交站排队。</p></div><div class="row"><div class="time hard">15:45</div><p class="hard">草千里 → 阿苏站，16:13到。全日最高级别硬节点。</p></div><div class="row"><div class="time hard">16:48</div><p class="hard">九州横断特急5号：阿苏 → 别府，18:45到。</p></div></div>
         <section class="why"><h3>这天的主角是列车与草千里</h3><p>阿苏男孩本身就是观光体验：Kuro 主题车厢、可看窗景的公共空间与车内小店，让“去阿苏”从交通变成旅行的一部分。11:22 到站后有时间处理行李，再接 11:50 公交。若满席，早班九州横断特急仍能保住阿苏游览。</p><p class="look"><strong>到草千里看什么：</strong>给火山草原和山体留时间，慢慢走、拍照；阿苏山上 Terminal 只是午饭顺利时的加分项。火山口不列入这次计划。15:20 左右收尾并去排返程公交，比多看一处景点更重要。</p><p class="source-links">延伸了解：<a href="https://www.jrkyushu.co.jp/english/train/asoboy.html" target="_blank" rel="noopener">JR 九州阿苏男孩介绍 ↗</a></p></section>
         <div class="food-note"><strong>午餐推荐｜</strong>草千里附近优先尝试赤牛料理，因为正好接在阿苏自然景观后；若餐厅排队，把时间留给草千里和 15:45 返程公交。别府晚餐偏向当地海鲜或随意选，吃完可在站前短逛、回酒店泡温泉。</div>
         <div class="map-card" data-map-card><iframe loading="lazy" title="9月29日地图" src="https://www.google.com/maps?q=Kusasenri&amp;output=embed"></iframe><div class="map-tools"><strong>📍 地图内嵌 · 点击地点切换</strong><div class="map-tabs"><button class="map-chip" type="button" aria-pressed="false" data-query="Kumamoto Station">熊本站</button><button class="map-chip" type="button" aria-pressed="false" data-query="Aso Station">阿苏站</button><button class="map-chip" type="button" aria-pressed="true" data-query="Kusasenri">草千里</button><button class="map-chip" type="button" aria-pressed="false" data-query="Aso Sanjo Terminal">山上Terminal</button><button class="map-chip" type="button" aria-pressed="false" data-query="Beppu Station">别府站</button></div><a class="map-open" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Kusasenri">在 Google Maps 中打开 ↗</a></div></div>
@@ -223,6 +232,223 @@
     }
     window.addEventListener('hashchange',updateCurrentDay);
     updateCurrentDay();
+    // 每个时间轴节点的执行卡片：主视图只显示路线，现场需要时展开。
+    const executionDetails={
+      d927:[
+        ['机场出关与进城',[
+          '16:30落地后先入境、取托运行李和过海关；出国际航站楼后找往博多站筑紫口的直达巴士，机场国际线乘车点以现场 6／7 号站台指示为准。',
+          '早至17:00–17:10出关才有机会冲18:24；17:30–17:45左右出关则按19:24安排。不要在机场为买票绕路，JR手续统一在博多办。',
+          '<a href="https://www.google.com/maps/search/?api=1&query=Fukuoka+Airport+International+Terminal" target="_blank" rel="noopener">国际航站楼地图 ↗</a> · <a href="https://www.google.com/maps/search/?api=1&query=Hakata+Station+Chikushi+Exit" target="_blank" rel="noopener">博多筑紫口地图 ↗</a>'
+        ]],
+        ['窗口办理清单',[
+          '三人在博多站中央大厅的 JR 九州售票处／Rail Pass Counter 会合。两名 Pass 持有人备好护照、JR Pass 电子凭证；同时出示已订由布院之森的预约凭证。第三人单独买需要的车票。',
+          '请窗口一次处理：9/27博多→鹿儿岛中央；9/28 Mizuho 612（两人在熊本下、第三人到博多）；9/29 09:57阿苏男孩！1号；9/29 16:48九州横断特急5号；领取9/30由布院之森4号实体指定席券。',
+          '若阿苏男孩满席，当场改划9/29 08:25九州横断特急1号（09:54到阿苏）。离柜台前逐张核日期、方向、人数、站名、车次、座位；拍照留档，票面优先。'
+        ]],
+        ['特大行李怎么说',[
+          '28寸箱三边合计164.5 cm，超过新干线160 cm门槛。9/27及9/28乘九州新干线时，请窗口安排「特大荷物スペースつき座席」，并尽量让三人座位靠近。',
+          '可直接给工作人员看：大きいスーツケースがあります。3辺合計は164.5cmです。特大荷物スペースつき座席をお願いします。',
+          '上车前再看车票的车厢与座位号，不要凭想象把大箱随意放在车厢末端。'
+        ]],
+        ['18:24能否乘坐的判断',[
+          '只有大约18:05前已拿齐、核对完全部实体票，且609有合适的三人和特大行李席位，才改坐早班。',
+          '任何手续未完成，就停止赶车，继续按19:24主方案走；不要为了早到55分钟压缩换票和核票。'
+        ]],
+        ['19:24主方案与晚餐',[
+          '19:01 Sakura 763虽然先发，却只比19:24 Mizuho 611早约6分钟到鹿儿岛，因此不必在两班之间冲刺。',
+          '办完手续后先上厕所、买饮料或便当，提前看月台；如遇航班或窗口严重延误，再让窗口查后续车次并以实体票为准。'
+        ]],
+        ['鹿儿岛中央到酒店',[
+          '优先问喜来登当晚免费 Shuttle 的准确上车点和末班；若刚好能搭且等待不长就坐。上车点网上资料曾有出入，以酒店当天答复为准。',
+          '市电备用：鹿儿岛中央駅前坐2系往鹿儿岛駅前 → 高见马场换1系往谷山 → 武之桥下车，步行约1分钟到喜来登。鹿儿岛市电不能直接用 Suica／SUGOCA 等全国交通IC；用支持的触碰银行卡，或现金换乘券。',
+          '入住时顺手拍下第二天酒店 Shuttle 时刻表，9/28取箱后回鹿儿岛中央会用到。'
+        ]]
+      ],
+      d928:[
+        ['早餐、寄箱与 CUTE',[
+          '早餐前尽量把大箱收好；约08:00退房并把三人的大行李寄存在喜来登，只背随身包上樱岛。',
+          '当天买 CUTE 一日券，已核票价 ¥1,400／人，覆盖市电、渡轮、Island View 等；手机购票官方现指向 My route，别再按旧版 WAKUWAKU 指引操作。',
+          '酒店旁武之桥乘市电1系往鹿儿岛站前，到水族馆口下，步行去鹿儿岛港渡轮码头。'
+        ]],
+        ['09:00渡轮的衔接',[
+          '09:00船约15分钟到樱岛港，下船后直接找 Island View 候车处；09:30发车。08:40船若正好碰上可坐，不为它赶早餐。',
+          '若只赶上09:20船，通常改等10:00 Island View，后续水族馆／城山相应缩短或取消。天气、船期当天以码头公告为准。'
+        ]],
+        ['汤之平怎么停',[
+          '09:30 Island View出发，约10:10到汤之平展望所；下车看火山山体、锦江湾和鹿儿岛市区，约30分钟足够。',
+          '约10:40搭下一班回樱岛港，约10:55到。周游巴士不需要每站下车，汤之平是核心；如火山或天气管制，服从现场路线。'
+        ]],
+        ['岛上后半段与午饭',[
+          '樱岛港附近步行串游客中心、熔岩海滨公园与足汤，不需要再坐车。尽量11:45左右结束散步，午饭留在港口一带。',
+          'MINATO CAFE在渡轮码头楼内，优势是吃完直接上船；排队明显就改快速小吃。船上「やぶ金」乌冬是有趣备选，但是否营业看当天船只。',
+          '计划12:25返航；若拖到12:45之后，水族馆就重新评估，不牺牲18:22列车。'
+        ]],
+        ['水族馆／城山取舍',[
+          '若12:25返航顺利，约12:45可入水族馆，13:15海豚活动可作为顺路看点，约14:10–14:15离开。CUTE持券可询问水族馆优惠。',
+          '只有天气晴朗且樱岛清晰，才考虑城山展望台。水族馆出来可先到天文馆，再搭 City View 去城山；它是单向环线，不要误以为水族馆上车能快速直达。',
+          '赶不上合适的城山巴士、云层厚或体力不足，直接删城山，回酒店取箱。'
+        ]],
+        ['回酒店取箱、进站',[
+          '16点多回喜来登取寄存行李；酒店 Shuttle 班次按前一晚拍的表执行，碰不上就坐市电，不为城山拖延。',
+          '目标最晚约17:15到鹿儿岛中央，买便当饮料、上厕所、看车票；17:55左右开始往新干线检票口移动。'
+        ]],
+        ['三人分流要确认',[
+          'Mizuho 612：18:22鹿儿岛中央发，19:12熊本到，19:46博多到。两人和26寸箱在熊本下；第三位朋友及其行李继续到博多。',
+          '上车前再次核对三人的目的站和特大行李座位，别把继续去博多的箱子跟着在熊本搬下车。'
+        ]],
+        ['熊本夜景、晚餐和回程',[
+          '到熊本后先步行去 VIA INN 入住放箱，再从熊本站前坐市电去通町筋／熊本城附近；市役所14楼展望厅18点后走1楼南侧入口，平日开放至22:00。',
+          '夜景后在上通、下通、新市街找晚餐和当地零食，不安排酒吧；晚间零售店可能较早关门，若想逛店可先逛再吃。',
+          '市电回熊本站的末班以当天站牌为准；旧核对过辛岛町方向22:17较稳、22:34较晚，别把后者当保证。'
+        ]]
+      ],
+      d929:[
+        ['阿苏男孩优先／满席切换',[
+          '9/27在博多窗口优先划阿苏男孩！1号两人普通指定席；09:57熊本发、11:22到阿苏，11:27是列车再发往宫地，并非阿苏到站时间。',
+          '若满席当场改划08:25九州横断特急1号，09:54到阿苏；那天早晨改为更早出门，阿苏站再按现场公交安排。不要退回已放弃的“熊本城早游＋13:25公交”旧方案。'
+        ]],
+        ['到站后先处理箱子',[
+          '出站后优先找阿苏站大／特大投币柜，成功寄存后才去站前阿苏登山线候车。26寸箱能否放入以实际柜体和空位为准。',
+          '若站内大柜满，可询问站前道之驿阿苏行李寄存；它曾公布可寄旅行箱。一定确认关门时间能覆盖16:13返站后取件，避免把箱子留过夜。',
+          '行李办妥前不去远处拍照或排餐厅。'
+        ]],
+        ['11:50上山公交',[
+          '阿苏站前 → 草千里阿苏火山博物馆前，计划12:16到。巴士不预约、按现场排队；JR到站与公交接驳并不保证。',
+          '若11:50因延误、满员或寄箱问题没坐上，立刻查站牌与工作人员提供的下一班和返程衔接，不硬追车，更不能影响16:48去别府的JR。'
+        ]],
+        ['赤牛午饭和草千里',[
+          '下车先看草千里周边餐厅排队；赤牛是这天最契合地点的午饭，但不是硬任务。排队太长就改简餐，把时间留给草原和15:45返程。',
+          '草千里可以慢慢看火山草地、山体与地貌；天气变化快，带外套、留意风雨和现场管制。'
+        ]],
+        ['13:11上山只是加分',[
+          '仅当午饭顺利、约12:55已结束且有体力时，才搭13:11草千里→13:20阿苏山上 Terminal。若午饭排队或更想走草千里，直接不上山。',
+          '山上 Terminal 是看开放区域，不代表能去火山口。原计划可搭14:25从山上返程（14:30经草千里）；要继续留草千里就确认实际下车点与15:45站位。火山口不列入计划。'
+        ]],
+        ['15:20开始收尾',[
+          '15:20结束拍照、购物和餐饮，约15:25到草千里回阿苏方向站牌排队。务必确认车头方向，不要站在去山上的一侧。',
+          '若排队异常长或工作人员提示可能上不去，马上向游客中心／工作人员求助，必要时把出租车作为紧急止损；不要等到巴士开走才处理。'
+        ]],
+        ['15:45是最后安全班',[
+          '草千里15:45发、阿苏站16:13到；返站后立即取箱。下一班常见返程公交已赶不上16:48特急，因此没有“再等一班也行”的余地。',
+          '山区堵车、满员都可能让接驳失效，所以提前排队比在草千里多待几分钟更值。'
+        ]],
+        ['取箱上车到别府',[
+          '16:13到阿苏后先拿箱，16:25–16:35完成厕所、买水和找月台；16:48九州横断特急5号开往别府，18:45到。',
+          '抵达后步行去御宿野乃入住；别府晚餐不预先锁店，想吃海鲜或当地料理就近选，之后可问前台温泉／私汤安排。'
+        ]]
+      ],
+      d930:[
+        ['早餐和酒店寄箱',[
+          '07:15–07:30起床整理。订单含早餐就在御宿野乃吃；不含就用站前／便利店轻食，不影响08:35公交。',
+          '约08:00退房，把箱子寄存在御宿野乃；酒店资料确认退房当天可寄存，午后回来取，不必寻找车站储物柜。'
+        ]],
+        ['别府站西口上车',[
+          '08:10–08:25步行到别府站西口③号站台，找亀の井巴士2号线；08:35发，计划08:59到海地狱前。上车前以现场站牌确认方向。',
+          '海地狱前往铁轮方向的站位有临时移位通知；去程与返程不要只按旧地图定位，先看临时站牌与车头方向。'
+        ]],
+        ['两个地狱怎么逛',[
+          '09:00–09:40先看钴蓝色海地狱，园区较大，可顺手看足汤或小卖店；09:40步行去隔壁鬼石坊主，约09:45–10:15看灰色热泥鼓泡。',
+          '两个景点步行可串联，不再加第三个；布丁和温泉蛋只是顺路小吃，不用为它们压缩返程。'
+        ]],
+        ['10:33理想返程',[
+          '10:20左右已回到正确的「回别府站西口」方向站牌，就乘10:33，10:58到别府站。',
+          '特别留意海地狱前临时站位和巴士车头方向，别站到往铁轮的一侧；当天以站牌为准。'
+        ]],
+        ['11:03从容备用',[
+          '如果鬼石坊主看得慢，坐11:03回程，11:28到别府站，仍然离14:36列车很远，不必奔跑。',
+          '若公交临时变动，立刻查现场时刻和步行到其他站位的可能性；优先保证中午回站前取箱。'
+        ]],
+        ['午餐、取箱与候车',[
+          '回别府后在站前吃午餐，约12:15–12:30回御宿野乃取行李。13:30左右回到别府站附近，不再去远距离景点。',
+          '14:05–14:15进入候车状态：看票面、站台与显示屏，先上厕所买水，再上由布院之森。'
+        ]],
+        ['由布院之森4号已订',[
+          '14:36别府发，15:56经过由布院，18:10抵博多。已订4号车4C／4D，务必带9/27领取的实体指定席券。',
+          '由布院这次只是在车上经过，不下车玩。到博多后去朋友家放行李，晚餐就近自由选，不再安排景点。'
+        ]]
+      ],
+      d1001:[
+        ['从朋友家出门',[
+          '08:00–08:40早餐和准备；约08:40步行去博多站。这天不带大箱，购物和步行节奏可以放松。',
+          '福冈市区全日不需要预订景点门票，重点是上午顺着同一方向走、下午留给自由逛。'
+        ]],
+        ['地铁到大濠',[
+          '博多站乘地铁空港线往姪浜方向，在大濠公园站下；出站后按地图走到公园湖边。',
+          '<a href="https://www.google.com/maps/search/?api=1&query=Ohori+Park+Fukuoka" target="_blank" rel="noopener">大濠公园地图 ↗</a>'
+        ]],
+        ['大濠公园怎么走',[
+          '沿湖选舒服的一段走到东侧即可，不要求完整绕湖；这块本来就是把密集铁路日程切换成城市散步。',
+          '如果早上天雨或体力不足，缩短公园时间，直接往舞鹤公园走。'
+        ]],
+        ['福冈城迹的看点',[
+          '从大濠公园向东进舞鹤公园，约一小时看石垣、城郭遗迹和下之桥御门；不是历史深度游。',
+          '天守台自2026/5/26至年底因发掘调查关闭，不要安排登天守台看景。'
+        ]],
+        ['兼虎按路线选店',[
+          '优先天神西通り店：从城迹往大名走，吃完继续大名／天神，少折返。若特别想吃本店，可改天神本店。',
+          '午餐是推荐不是预约任务；排队超出预期时改附近其他店，也不影响下午自由购物。'
+        ]],
+        ['下午整块自由逛',[
+          '范围是大名 → 西通 → 天神 → 天神地下街。想去的品牌、小店、商场随时加进去，不必预设每间店的到达时间。',
+          '川端商店街和櫛田神社留到10/2上午，今天不重复。晚餐按现场胃口定，之后地铁或公交回博多。'
+        ]]
+      ],
+      d1002:[
+        ['上午只浅游两处',[
+          '櫛田神社和川端商店街距离近，适合最后半天连走；遇到喜欢的伴手礼可以看，但不把上午塞进更多远点。',
+          '最迟约11:30收尾，后面还有午饭、取箱和值机时间。'
+        ]],
+        ['午饭有明确结束线',[
+          '在川端附近看到想吃的就吃；没有目标则回博多站附近解决。11:30–12:20这段是饭和移动的共同预算。',
+          '不要为了等位热门餐厅而推迟13:05从朋友家出发。'
+        ]],
+        ['回朋友家取行李',[
+          '约12:20–12:40回到朋友家，12:40–13:05整理最后行李。离开前查护照、航班／登机资料、手机、电量、充电线和交通支付方式。',
+          '只在自己的私人记录中保留朋友住址；公开共享网页不写具体门牌。'
+        ]],
+        ['13:05离家安全线',[
+          '拖箱步行去博多站按15–20分钟预算，目标13:20–13:25到筑紫口机场巴士站。不要误走到博多巴士总站。',
+          '<a href="https://www.google.com/maps/search/?api=1&query=Hakata+Station+Chikushi+Exit+Airport+Bus" target="_blank" rel="noopener">筑紫口巴士站地图 ↗</a>'
+        ]],
+        ['13:37直达国际线',[
+          '主方案是博多站筑紫口直接到福冈机场国际航站楼，中途不用在国内线换巴士。约14:00–14:15到，给18:00国际航班保留值机、托运、安检和出境余量。',
+          '当前线路按无现金乘车办理，可用交通IC或支持的银行卡触碰支付；¥400为普通票价，部分电子支付有优惠。10/1晚上必须再核10/2新时刻及站位。'
+        ]],
+        ['13:52备用／线路异常',[
+          '若13:37排队满员或没赶上，直接等13:52。再遇异常，不在站牌长期耗时间：博多站坐地铁空港线到福冈机场站（国内线），转免费航站楼接驳巴士去国际线。',
+          '两种方案都不需要出租车；现场看公交运行信息和机场指示。'
+        ]],
+        ['到机场后的顺序',[
+          '先找航班柜台和托运，再过安检、出境；机场逛店只能排在手续之后。',
+          '航班起飞时间是18:00，但值机／托运截止可能早得多，最终以航空公司通知为准。'
+        ]]
+      ]
+    };
+    Object.entries(executionDetails).forEach(([dayId,steps])=>{
+      const day=document.getElementById(dayId);
+      const timeline=day?.querySelector('.timeline');
+      if(!timeline)return;
+      const hint=document.createElement('p');
+      hint.className='detail-guide';
+      hint.textContent='执行详细版：点击每一步下方的「展开执行细节」，查看站位、换乘、行李和备选判断。';
+      timeline.before(hint);
+      const rows=[...timeline.querySelectorAll(':scope > .row')];
+      steps.forEach(([title,items],index)=>{
+        const row=rows[index];
+        if(!row)return;
+        const detail=document.createElement('details');
+        detail.className='step-detail';
+        const summary=document.createElement('summary');
+        summary.textContent='展开执行细节 · '+title;
+        const body=document.createElement('div');
+        body.className='step-detail-body';
+        const list=document.createElement('ul');
+        items.forEach(item=>{const li=document.createElement('li');li.innerHTML=item;list.append(li)});
+        body.append(list);
+        detail.append(summary,body);
+        row.append(detail);
+      });
+    });
   </script>
   <script type="module" src="./firebase-sync.js"></script>
 </body>
