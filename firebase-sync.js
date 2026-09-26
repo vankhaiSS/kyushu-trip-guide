@@ -24,14 +24,17 @@ const configured = Object.entries(firebaseConfig).every(([key, value]) =>
   typeof value === "string" && value.length > 0 && !value.startsWith("REPLACE_WITH")
 );
 
-if (!configured) {
-  const localFile = location.protocol === "file:";
-  fields.forEach(field => { field.readOnly = !localFile; });
-  clearButton.hidden = !localFile;
-  setStatus(localFile ? "本机预览 · 未连接共享" : "共享数据库待配置");
-  note.textContent = localFile
-    ? "此本机预览可填写并保存在当前设备；朋友间实时共享需先完成 Firebase 配置并使用已发布的网址。"
-    : "共享尚未连接。完成 Firebase 配置后，朋友可免登录查看，只有行程主人能编辑。";
+if (location.protocol === "file:") {
+  // A local file cannot complete OAuth. Keep it editable as a private draft only.
+  fields.forEach(field => { field.readOnly = false; });
+  clearButton.hidden = false;
+  setStatus("本机草稿 · 不会共享");
+  note.textContent = "当前是本机预览：可填写并保存在这台设备，但朋友看不到。要修改共享版本，请打开 GitHub 网页并以行程主人 Google 账号登录。";
+  loginButton.hidden = true;
+  saved.textContent = "本机自动保存已开启";
+} else if (!configured) {
+  setStatus("共享数据库待配置");
+  note.textContent = "共享尚未连接。完成 Firebase 配置后，朋友可免登录查看，只有行程主人能编辑。";
   loginButton.hidden = true;
 } else {
   note.textContent = "共享内容从 Firebase 实时读取；仅已授权的行程主人可以修改。";
